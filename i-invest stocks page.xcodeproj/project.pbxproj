@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9802E9A91E356E4300247EB5 /* stocksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9802E9A81E356E4300247EB5 /* stocksData.swift */; };
 		98A965DA1E32A85F00B42234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A965D91E32A85F00B42234 /* AppDelegate.swift */; };
 		98A965DC1E32A85F00B42234 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A965DB1E32A85F00B42234 /* ViewController.swift */; };
 		98A965DF1E32A85F00B42234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A965DD1E32A85F00B42234 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		98A965E41E32A85F00B42234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A965E21E32A85F00B42234 /* LaunchScreen.storyboard */; };
 		98A965EF1E32A85F00B42234 /* i_invest_stocks_pageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A965EE1E32A85F00B42234 /* i_invest_stocks_pageTests.swift */; };
 		98A965FA1E32A85F00B42234 /* i_invest_stocks_pageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A965F91E32A85F00B42234 /* i_invest_stocks_pageUITests.swift */; };
+		98A966081E32AE6B00B42234 /* StocksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A966071E32AE6B00B42234 /* StocksCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9802E9A81E356E4300247EB5 /* stocksData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stocksData.swift; sourceTree = "<group>"; };
 		98A965D61E32A85F00B42234 /* i-invest stocks page.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "i-invest stocks page.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A965D91E32A85F00B42234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98A965DB1E32A85F00B42234 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		98A965F51E32A85F00B42234 /* i-invest stocks pageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "i-invest stocks pageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A965F91E32A85F00B42234 /* i_invest_stocks_pageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i_invest_stocks_pageUITests.swift; sourceTree = "<group>"; };
 		98A965FB1E32A85F00B42234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98A966071E32AE6B00B42234 /* StocksCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StocksCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9802E9A31E35471200247EB5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				98A965DB1E32A85F00B42234 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9802E9A41E35471B00247EB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98A966071E32AE6B00B42234 /* StocksCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9802E9A51E35472200247EB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9802E9A81E356E4300247EB5 /* stocksData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		98A965CD1E32A85E00B42234 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +125,10 @@
 		98A965D81E32A85F00B42234 /* i-invest stocks page */ = {
 			isa = PBXGroup;
 			children = (
+				9802E9A51E35472200247EB5 /* Model */,
+				9802E9A41E35471B00247EB5 /* View */,
+				9802E9A31E35471200247EB5 /* Controller */,
 				98A965D91E32A85F00B42234 /* AppDelegate.swift */,
-				98A965DB1E32A85F00B42234 /* ViewController.swift */,
 				98A965DD1E32A85F00B42234 /* Main.storyboard */,
 				98A965E01E32A85F00B42234 /* Assets.xcassets */,
 				98A965E21E32A85F00B42234 /* LaunchScreen.storyboard */,
@@ -263,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				98A965DC1E32A85F00B42234 /* ViewController.swift in Sources */,
+				9802E9A91E356E4300247EB5 /* stocksData.swift in Sources */,
+				98A966081E32AE6B00B42234 /* StocksCollectionViewCell.swift in Sources */,
 				98A965DA1E32A85F00B42234 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +544,7 @@
 				98A966001E32A85F00B42234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98A966011E32A85F00B42234 /* Build configuration list for PBXNativeTarget "i-invest stocks pageTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +553,7 @@
 				98A966031E32A85F00B42234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98A966041E32A85F00B42234 /* Build configuration list for PBXNativeTarget "i-invest stocks pageUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +562,7 @@
 				98A966061E32A85F00B42234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
